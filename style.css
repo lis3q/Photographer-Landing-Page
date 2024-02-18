@@ -10,9 +10,12 @@
     --grey: #858585;
     --green: #40be27;
 }
+
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 68px;
 }
+
 .heading {
     margin: 15px 0;
 }
@@ -34,9 +37,16 @@ html {
 }
 
 /* Navbar */
+.navbar {
+    transition: .3s ease-in-out;
+}
 .navbar a {
     color: var(--white);
     transition: .3s;
+}
+.navbar-sticky {
+    background: #292929;
+    padding: 8px !important;
 }
 .navbar a:hover,
 .navbar a:focus,
@@ -131,6 +141,66 @@ html {
 }
 
 
+/* Benefits section */
+.benefits-section {
+    padding: 4% 0 7% 0;
+}
+.benefits-section .card {
+    padding: 3% 0;
+    box-shadow: 0 0 12px 3px #0000000a;
+}
+.benefits-section .card i {
+    background: var(--green);
+    width: max-content;
+    margin: 0 auto;
+    padding: 25px;
+    border-radius: 50%;
+    color: var(--white);
+}
+
+
+/* Contact section */
+.contact-section .heading h2 {
+    color: var(--white);
+}
+.contact-section input:focus,
+.contact-section textarea:focus {
+    box-shadow: none !important;
+    border: none !important;
+    outline: none !important;
+}
+.contact-section input,
+.contact-section textarea {
+    width: 40%;
+}
+.contact-section textarea {
+    height: 320px !important;
+    resize: none;
+}
+.contact-section label {
+    color: var(--grey);
+}
+.contact-section .btn {
+    background: var(--green);
+    width: 40%;
+    color: var(--white);
+    height: 56px;
+}
+
+/* Footer */
+.footer h1 {
+    font-weight: 600;
+    font-size: 3rem;
+}
+.footer p {
+    color: var(--grey);
+    margin: 1px !important;
+}
+footer p:last-child {
+    margin: 30px 0 0 0 !important;
+    font-weight: 500;
+}
+
 
 
 /* Responsivness */
@@ -138,6 +208,12 @@ html {
     /* Heading */
     .heading {
         text-align: center;
+    }
+    .heading h2 {
+        font-size: 2em;
+    }
+    .heading p {
+        font-size: 1em;
     }
 
     /* Navbar */
@@ -158,10 +234,36 @@ html {
     .content p {
         width: 100%;
         font-size: 1em;
+        text-align: center;
+    }
+    .content .buttons {
+        justify-content: center;
     }
 
     /* About section */
     .about-text p {
         text-align: justify;
+    }
+
+    /* Benefits section */
+    .benefits-section .card {
+        width: 16rem !important;
+    }
+    .benefits-section .card i {
+        padding: 15px;
+        font-size: 1.4rem !important;
+    }
+    .benefits-section .card h3 {
+        font-size: 1.3rem;
+    }
+    .benefits-section .card p {
+        font-size: 0.9rem;
+    }
+
+    /* Contact section */
+    .contact-section input,
+    .contact-section textarea,
+    .contact-section .btn {
+        width: 100%;
     }
 }
