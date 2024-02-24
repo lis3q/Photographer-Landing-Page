@@ -41,12 +41,6 @@ body {
     min-height: 100vh;
     position: relative;
 }
-.hero-section .wave {
-    position: absolute;
-    left: 0;
-    bottom: -20%;
-    height: 600px;
-}
 /* Navbar */
 .navbar {
     transition: .3s ease-in-out;
@@ -239,11 +233,7 @@ footer p:last-child {
         font-size: 1em;
     }
 
-    /* Hero section */
-    .hero-section .wave {
-        height: 300px;
-        bottom: 0%;
-    }
+    /* About */
     .about-section {
         margin-top: 0;
     }
